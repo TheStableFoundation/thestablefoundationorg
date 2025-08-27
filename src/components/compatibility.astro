@@ -5,85 +5,68 @@ import type { CompatibilityItem } from "~/types";
 
 const frameworks: Array<CompatibilityItem> = [
   {
+    title: "Debian",
+    icon: "frameworks/debian",
+    url: "https://www.debian.org/",
+  },
+  {
+    title: "Solana",
+    icon: "frameworks/solana",
+    url: "https://solana.org/",
+  },
+  {
+    title: "Rust",
+    icon: "frameworks/rust",
+    url: "https://www.rust-lang.org/",
+  },
+  {
+    title: "Ruby on Rails",
+    icon: "frameworks/ruby-on-rails",
+    url: "https://rubyonrails.org/",
+  },
+  {
+    title: "TypeScript",
+    icon: "frameworks/typescript",
+    url: "https://www.typescriptlang.org/",
+  },
+  {
     title: "React",
     icon: "frameworks/react",
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
+    title: "NextJS",
+    icon: "frameworks/nextjs",
+    url: "https://nextjs.org/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
+    title: "Node.js",
+    icon: "frameworks/nodejs",
+    url: "https://nodejs.org/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
+    title: "Swift",
+    icon: "frameworks/swift",
+    url: "https://swift.org/",
   },
   {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
-  },
-];
-
-const platforms: Array<CompatibilityItem> = [
-  {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
+    title: "Astro",
+    icon: "frameworks/astro",
+    url: "https://astro.build/",
   },
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Modern Stacks" id="compatibility">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    Have a <span class="text-primary">work</span> instead of a job. Work with modern
+    {" "}
+    <span class="text-primary">technologies</span>
+    and solve <span class="text-primary">real</span> problems.
   </Fragment>
   <CompatibilityList
     items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    title="Technologies"
+    url="https://5mb.app/"
   />
 </ContentSection>

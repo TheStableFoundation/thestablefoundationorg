@@ -4,9 +4,9 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "BACH Money", url: "#features" },
-  { title: "NotWallet Crypto", url: "#compatibility" },
-  { title: "NotDAX Exchange", url: "#showcase" },
+  { title: "BACH Money", url: "https://bach.money" },
+  { title: "NotWallet Crypto", url: "https://bach.money/wallet" },
+  { title: "NotDAX Exchange", url: "https://notdax.com" },
 ];
 ---
 
@@ -55,9 +55,6 @@ const navItems: Array<NavItem> = [
               <Icon name="mdi:close" class="size-8" />
             </button>
           </header>
-          <div class="flex justify-center">
-            <Icon name="logomark" class="size-16" />
-          </div>
           <nav>
             <ul class="flex flex-col">
               {
