@@ -5,11 +5,6 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://thestablefoundation.org/",
-    description: "The Stable Foundation official website",
-    icon: "mdi:home",
-  },
-  {
     url: "https://github.com/TheStableFoundation",
     description: "The Stable Foundation on GitHub",
     icon: "fa-brands:github-alt",
@@ -38,6 +33,7 @@ const links: Array<FooterLink> = [
           <a
             class="flex size-16 items-center justify-center rounded-full border-2 border-current p-4"
             href={link.url}
+            target="_blank"
           >
             <span class="sr-only">{link.description}</span>
             <Icon class="size-full" name={link.icon} />

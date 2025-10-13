@@ -4,9 +4,9 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "BACH Money", url: "https://bach.money" },
-  { title: "NotWallet Crypto", url: "https://bach.money/wallet" },
-  { title: "NotDAX Exchange", url: "https://notdax.com" },
+  { title: "BACH Money Defi", url: "https://bach.money" },
+  { title: "NotWallet Crypto", url: "https://notwallet.eu" },
+  { title: "NotDAX Digital Assets Exchange", url: "https://notdax.com" },
 ];
 ---
 
@@ -24,7 +24,7 @@ const navItems: Array<NavItem> = [
           {
             navItems.map(({ title, url }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-sm" href={url} target="_blank">
                   {title}
                 </a>
               </li>
